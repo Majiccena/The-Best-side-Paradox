@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    /*用flex布局*/
+    justify-content: center;
+    /*水平居中*/
+    align-items: center;
+    /*垂直居中*/
+    min-height: 100vh;
+    /*确保body至少占满整个视口高度*/
+    margin: 0;
+    /*去掉默认的外边距*/
+    background-color: lch(1.65% 0 296.81);
+}
+
+/* container */
+#app {
+    position: relative;
+    /*作为按钮定位的参考点*/
+    width: fit-content;
+    /* 宽度刚好等于里面的内容（640 像素的画布），不会被撑开 */
+}
+
+/* Blue button */
+.pill-btn {
+    background-color: rgb(133, 223, 255);
+    /* light blue background */
+    color: lab(0% 0 0);
+    /* black text color */
+    border: 2px solid #ff86e7;
+    /* Pink border */
+    border-radius: 999px;
+    /* creates a pill shape */
+    padding: 14px 48px;
+    /*内边距*/
+    font-size: 24px;
+    /*字号*/
+    font-family: sans-serif;
+    /*无衬线字体*/
+    cursor: pointer;
+    /*鼠标悬停时显示为手型*/
+}
+
+.pill-btn:hover {
+    .small {
+    font-size: 18px;
+    padding: 8px 30px;
+    line-height: 1.2;
+}
+    background-color: oklch(98.465% 0.06438 111.332);
+    /* 变浅黄色 */
+    /* slightly transparent on hover */
+}
+
+canvas {
+    display: block;
+}
